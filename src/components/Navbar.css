@@ -1,0 +1,37 @@
+.container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(227, 232, 241);
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  box-sizing: border-box;
+}
+
+.navbar-right {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-right li {
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-right li:hover {
+  color: #38bdf8;
+  transform: scale(1.05);
+}
