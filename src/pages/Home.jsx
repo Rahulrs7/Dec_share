@@ -15,7 +15,7 @@ const Home = () => {
 
         try {
             setLoading(true)
-            const res = await axios.post('http://localhost:5000/api/upload', formData)
+            const res = await axios.post('https://dec-share-backend.onrender.com/api/upload', formData)
             setLink(res.data.url)
         } catch (err) {
             alert("Upload failed")
